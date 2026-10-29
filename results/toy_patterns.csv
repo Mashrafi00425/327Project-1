@@ -1,0 +1,9 @@
+support,itemset
+3,"beer"
+3,"beer;diaper"
+4,"diaper"
+3,"diaper;milk"
+3,"bread;diaper"
+4,"milk"
+3,"bread;milk"
+4,"bread"

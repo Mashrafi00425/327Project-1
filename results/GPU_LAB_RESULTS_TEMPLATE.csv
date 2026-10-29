@@ -1,0 +1,1 @@
+dataset,minimum_support,patterns,cpu_median_seconds,cuda_median_seconds,cpu_peak_rss_mib,cuda_peak_rss_mib,cuda_buffer_max_mib,cuda_kernels,cuda_conditional_kernels,gpu_device,speedup_cpu_over_gpu

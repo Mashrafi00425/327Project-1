@@ -1,0 +1,8 @@
+/fp_growth
+/fp_growth.exe
+/fp_growth_cuda
+/fp_growth_cuda.exe
+/fp_growth_cuda_sim
+/fp_growth_cuda_sim.exe
+__pycache__/
+*.py[cod]

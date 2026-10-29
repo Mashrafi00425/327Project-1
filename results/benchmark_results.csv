@@ -1,0 +1,10 @@
+dataset,file,transactions,unique_items,support,support_count,patterns,max_length,root_tree_nodes,runtime_median_s,runtime_min_s,runtime_max_s,peak_rss_median_mib,peak_rss_max_mib
+UCI-WDBC (median bins),uci_wdbc_569.txt,569,60,40%,228,283,6,12423,0.012087,0.011401,0.018037,5.0,5.0
+UCI-WDBC (median bins),uci_wdbc_569.txt,569,60,50%,285,30,1,4829,0.005969,0.004288,0.006618,3.191,3.191
+UCI-Digits (nonzero),uci_digits_1797.txt,1797,61,70%,1258,3457,9,6624,0.025126,0.021434,0.134956,4.207,4.207
+UCI-Digits (nonzero),uci_digits_1797.txt,1797,61,80%,1438,481,7,1205,0.014603,0.008683,0.018641,2.82,2.824
+UCI-Digits x30 (replicated),uci_digits_repeated_53910.txt,53910,61,70%,37737,3457,9,6624,0.284824,0.278439,0.308532,24.598,24.605
+UCI-Digits x30 (replicated),uci_digits_repeated_53910.txt,53910,61,80%,43128,481,7,1205,0.224617,0.223087,0.253092,23.227,23.23
+Synthetic retail (50k),synthetic_retail_50000.txt,50000,120,3%,1500,265,3,257500,0.301134,0.290816,0.337264,68.469,68.469
+Synthetic retail (50k),synthetic_retail_50000.txt,50000,120,5%,2500,108,2,157498,0.204488,0.19721,0.212164,44.109,44.109
+Synthetic retail (50k),synthetic_retail_50000.txt,50000,120,7%,3500,60,2,96210,0.152636,0.143717,0.157176,29.977,29.98

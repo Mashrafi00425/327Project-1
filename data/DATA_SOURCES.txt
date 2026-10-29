@@ -1,0 +1,5 @@
+uci_digits_1797.txt: sklearn.datasets.load_digits(): a UCI Optical Recognition of Handwritten Digits test-set copy; 1,797 rows. Features transformed to pixelNN=ink for nonzero pixels; class label excluded.
+uci_digits_repeated_53910.txt: 30 repeats of same 1,797 rows, for synthetic scaling only; not 53,910 independent UCI samples.
+uci_wdbc_569.txt: sklearn.datasets.load_breast_cancer(): UCI Wisconsin Diagnostic Breast Cancer copy; 569 rows. Per-feature above-median/high vs at-or-below-median/low; class label excluded.
+synthetic_retail_50000.txt: independently generated 50k synthetic baskets, seed 3582026; NOT an actual UCI dataset.
+Sources: https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic and https://archive.ics.uci.edu/dataset/80/optical+recognition+of+handwritten+digits ; https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_digits.html

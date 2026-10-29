@@ -1,0 +1,6 @@
+# Five-market-basket example; minimum support 3
+bread milk
+bread diaper beer eggs
+milk diaper beer cola
+bread milk diaper beer
+bread milk diaper cola

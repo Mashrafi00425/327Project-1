@@ -1,0 +1,27 @@
+{
+  "backend": "cpu",
+  "input": "data/toy_transactions.txt",
+  "transactions": 5,
+  "unique_items": 6,
+  "minimum_support_count": 3,
+  "minimum_support_percent": 60.000000,
+  "frequent_itemsets": 8,
+  "max_pattern_length": 2,
+  "root_tree_nodes": 10,
+  "conditional_trees_built": 4,
+  "all_tree_nodes_allocated": 19,
+  "runtime_seconds": 0.000451,
+  "peak_rss_kib": 1816,
+  "support_root_calls": 1,
+  "support_conditional_calls": 4,
+  "top_itemsets": [
+    {"support": 4, "items": "bread"},
+    {"support": 4, "items": "diaper"},
+    {"support": 4, "items": "milk"},
+    {"support": 3, "items": "beer"},
+    {"support": 3, "items": "beer;diaper"},
+    {"support": 3, "items": "bread;diaper"},
+    {"support": 3, "items": "bread;milk"},
+    {"support": 3, "items": "diaper;milk"}
+  ]
+}

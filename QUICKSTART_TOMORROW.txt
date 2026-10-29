@@ -1,0 +1,36 @@
+CUDA FP-GROWTH — LAB CHECKLIST
+
+1. In a terminal inside FP_Growth_CUDA_Project:
+   nvcc --version
+   nvidia-smi          # optional; may be unavailable on Jetson
+
+2. Compile BOTH programs:
+   make
+   make cuda
+   (If nvcc is missing from PATH but CUDA is installed: make cuda NVCC=/usr/local/cuda/bin/nvcc)
+
+3. First REAL GPU run:
+   ./fp_growth_cuda data/toy_transactions.txt 3 --output results/toy_cuda.csv --summary results/toy_cuda.json
+   EXPECT: 8 frequent patterns, 'bread;milk' support 3, 5 CUDA kernels total.
+   The JSON must show a real NVIDIA device, NOT 'HOST SIMULATOR'.
+
+4. Exact CPU vs CUDA pattern comparison:
+   python3 scripts/verify_cuda.py --random-cases 20
+   EXPECT: all real CPU-GPU comparisons PASS, including complete itemsets and supports.
+
+5. Actual GPU measurements on lab hardware:
+   python3 scripts/benchmark_cuda.py --repeats 3
+   SAVES: results/cuda_benchmark_results.csv + .json
+   Save those results so you can update report CUDA section with actual measured values.
+
+6. Optional ORIGINAL UCI data with internet:
+   python3 scripts/get_uci.py all
+   Some files need old compression tooling or may be unavailable. Tests still work offline.
+
+7. PDF: report/FP_Growth_CUDA_Project_Report.pdf
+   Currently contains REAL CPU baseline results; CUDA GPU figures MUST be added from lab.
+   Do not claim NVIDIA execution or speedup before step 4/5 finishes.
+
+IMPORTANT: This code is CUDA/C++ hybrid FP-Growth, not a GPU-resident FP-tree.
+The actual CUDA kernel was not compiled in preparation (no nvcc/GPU here).
+If errors occur, capture full compiler/runtime output and nvcc --version.
